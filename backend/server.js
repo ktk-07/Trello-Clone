@@ -470,7 +470,6 @@ app.route("/api/projectpage")
         responseData.userAuth = false
         res.send(responseData);
     }
-
 })
 .post((req,res)=>{
     let responseData = {
