@@ -1,0 +1,93 @@
+#helpSimbaPage{
+    width: 100vw;
+    height: fit-content;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+.BodyBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    width: 100vw;
+}
+
+.SmallBox{
+    height:fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+    padding:15px;
+}
+
+.pixelBox{
+    background-image: url(../Img/RM_textbox1.png);
+    background-size: cover;
+    margin: 10px;
+}
+
+.BodyBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    width: 100vw;
+}
+
+.SmallBoxText{
+    text-align: center;
+}
+
+.HeaderBox{
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+}
+
+.HeaderBox h1{
+    color: black;
+    font: 1.5rem;
+    /* height: 20vh;
+    width: 30vw; */
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.SixBoxes{
+    height: fit-content;
+    display: flex;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.VineImg{
+    background-image: url(../Img/Vine.png);
+    background-color: cornflowerblue;
+}
+
+
+.imgBox{
+    background-image: url(../Img/Vine.png);
+    /* background-repeat: repeat-y; */
+    width:6vw;
+    height: 69vh;
+    /* height: 90vh;
+    width:6vw; */
+}
