@@ -1,6 +1,6 @@
 import { ItemContent } from "./ItemContent";
 import { EditableModalContent } from "./EditableModalContent";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import axios from "axios";
 
 export const ItemModalContent = (props)=>{

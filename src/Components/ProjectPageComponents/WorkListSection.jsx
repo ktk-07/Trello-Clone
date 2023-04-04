@@ -1,6 +1,6 @@
 import { WorkListItem } from "./WorkListItem";
 import { WorkListAddItem } from "./WorkListAddItem";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { get } from "mongoose";
 
