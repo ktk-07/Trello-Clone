@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
+// import { useState } from "react/cjs/react.development";
 
 function Navbar(){
     // getting position of the navbar oncce its not zero the background should be compeltely white

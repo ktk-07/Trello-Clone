@@ -1,7 +1,5 @@
-import react from "react";
-import reactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react"
 
 function FirstpageContent(){
     let [emailAddress, setEmail] = useState("")
@@ -24,7 +22,7 @@ function FirstpageContent(){
     
             </div>
         </div>
-        <img src="https://i.pinimg.com/736x/63/d0/ef/63d0efdd68e1cc35a5e75d9d1ed869d1.jpg" />
+        <img src="https://i.pinimg.com/736x/63/d0/ef/63d0efdd68e1cc35a5e75d9d1ed869d1.jpg" alt="home page"/>
     </div>);
 }
 
