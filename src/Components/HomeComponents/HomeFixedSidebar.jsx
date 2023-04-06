@@ -20,7 +20,7 @@ export const HomeFixedSidebar = (props)=>{
     const [workspaces, setWorkSpaces] = useState([]);
 
     const getWorkSpaces = async ()=>{
-        let resData = await axios.get("http://localhost:5000/api/workspaces",{withCredentials:true});
+        let resData = await axios.get("/api/workspaces",{withCredentials:true});
         // basically get data of workspaces and set it 
         setWorkSpaces(resData.data);
     }

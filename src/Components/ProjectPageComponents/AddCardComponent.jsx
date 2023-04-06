@@ -7,7 +7,7 @@ export const AddCardComponent = (props)=>{
 
     const addCard = async (cardTitle)=>{
     //const response = await axios.post("http://localhost:5000/api/workspace/addcard"
-    const response = await axios.post("api/workspace/addcard",{
+    const response = await axios.post("/api/workspace/addcard",{
         workspaceTitle:props.wsTitle,
         itemTitle:props.itemTitle,
         cardTitle:cardTitle

@@ -8,7 +8,7 @@ export const ItemModalContent = (props)=>{
     let [headerVal,setHeaderVal] = useState(props.content);
 
     const editModalContentHeader = async ()=>{
-        let response = await axios.post("http://localhost:5000/api/workspace/modal/editCardTitle",{
+        let response = await axios.post("/api/workspace/modal/editCardTitle",{
             workspaceTitle:props.wsTitle,
             itemTitle:props.itemTitle,
             cardTitle:props.content,
