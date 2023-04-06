@@ -1,0 +1,181 @@
+:root{
+    --mainColor: rgb(112, 241, 160);
+    --secondaryColor: rgb(43, 144, 95);
+}
+
+#loginPage{
+    height: 100%;
+    width:100%;
+    background-color: #6caf6e;
+    background: -webkit-linear-gradient(top, #6caf6e, #FFFFFF);
+    background: -moz-linear-gradient(top, #6caf6e, #FFFFFF);
+    background: linear-gradient(to bottom, #6caf6e , #FFFFFF);
+}
+
+.structPage{
+    height: 100%;
+    width:100%;
+    background-color: #6caf6e;
+    background: -webkit-linear-gradient(top, #6caf6e, #FFFFFF);
+    background: -moz-linear-gradient(top, #6caf6e, #FFFFFF);
+    background: linear-gradient(to bottom, #6caf6e , #FFFFFF);
+}
+
+.loginBox{
+    color: black;
+    position: relative;
+    left:35%;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.logoLogin{
+    width: 100%;
+    height: 10%;
+}
+
+
+.signupBox{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid black; */
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow:  5px 5px 15px -3px #b3b1b1;
+    font-size: 1.1rem;
+}
+
+
+.signupBox h2{
+    width: 100%;
+    height:10%;
+}
+
+.formBox{
+    width: 100%;
+    height: 40%; 
+    font-size: 1.2rem;
+}
+
+.formContentBoxS{
+    height: 30%;
+}
+
+.formContentBox{
+    position: relative;
+    left: 20%;
+    width: 60%;
+    height: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+
+.formContentBox input{
+    margin: 5px;
+    width: 100%;
+    line-height: 1.4rem;
+    border: white 1px solid;
+    background-color: rgb(235, 235, 235);
+    border-radius: 2px;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding:3px;
+}
+
+.formContentBox input::placeholder{
+    color:gray;
+}
+
+.formContentBox input:focus{
+    background-color: white;
+    border: 1px solid blue;
+}
+
+.formContentBox p{
+    height: fit-content;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.continueBtn{
+    width: 100%;
+    height: fit-content;
+    border: none;
+    outline: none;
+    color:gray;
+    background-color: var(--mainColor);
+    border-radius: 2px;
+    font-size: 1.3rem;
+    padding: 3px;
+    text-decoration: none;
+}
+
+
+.continueBtn:hover{
+    color: rgb(71, 70, 70);
+}
+
+
+#OauthBox{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#OauthBox a{
+    text-decoration: none;
+}
+
+.oAuthBtn{
+    width:60%;
+    height:fit-content;
+    padding:5px;
+    border-radius:2px;
+    text-align: center;
+}
+
+.oAuthBtnF{
+    width:60%;
+    height:fit-content;
+    padding:5px;
+    border-radius:2px;
+    text-align: center;
+}
+
+.textLogin{
+    width: 100%;
+    height:10%;
+}
+
+.textLogin a{
+    text-decoration: none;
+    color: var(--mainColor);
+    font-size: 1rem;
+}
+
+.textLogin a:hover{
+    text-decoration: underline;
+    color: var(--secondaryColor);
+}
+
+.languagesBox{
+    width: 100%;
+    height:5%;
+}
+
+
+

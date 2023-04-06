@@ -4,7 +4,7 @@ import GoogleLogin from "react-google-login";
 
 export const OauthBox = ()=>{
     const googleAuth = async()=>{
-        let response = await axios.get("http://localhost:5000/auth/google",{withCredentials:true});
+        let response = await axios.get("/auth/google",{withCredentials:true});
     }
 
 
@@ -14,7 +14,7 @@ export const OauthBox = ()=>{
 
     return(
     <div id="OauthBox">
-            <a className="btn btn-block btn-social btn-google oAuthBtn" href="http://localhost:5000/auth/google" onClick={(event)=>{
+            <a className="btn btn-block btn-social btn-google oAuthBtn" href="/auth/google" onClick={(event)=>{
                  console.log(process.env.GOOGLE_CLIENT_ID);
                 event.preventDefault();
                 // googleAuth();

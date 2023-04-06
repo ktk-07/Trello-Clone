@@ -9,7 +9,7 @@ function WorkListItem(props){
     let [inputVal , setInputVal] = useState(props.itemTitle);
 
     const editItemTitle= async (val)=>{
-        const response = await axios.post("http://localhost:5000/api/workspace/editItemTitle",{
+        const response = await axios.post("/api/workspace/editItemTitle",{
             workspaceTitle:props.wsTitle,
             itemTitle:val,
             prevItemTitle:previousItemTitle

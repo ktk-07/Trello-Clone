@@ -11,7 +11,7 @@ export const HomePage = ()=>{
     const navigate = useNavigate();
 
     const userAuthenticated = async ()=>{
-        let responseData = await axios.get("http://localhost:5000/api/auth",{withCredentials:true});
+        let responseData = await axios.get("/api/auth",{withCredentials:true});
         console.log(responseData);
         return responseData.data;
     }

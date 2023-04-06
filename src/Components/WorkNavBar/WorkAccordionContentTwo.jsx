@@ -9,7 +9,7 @@ export const WorkAccordionContentTwo = (props)=>{
     
     // do some database calling to change the information inside the content i guess.
     const logOut = async ()=>{
-        let response = await axios.get("http://localhost:5000/api/logout",{withCredentials:true})
+        let response = await axios.get("api/logout",{withCredentials:true})
         console.log(response.data);
         return response.data;
     }

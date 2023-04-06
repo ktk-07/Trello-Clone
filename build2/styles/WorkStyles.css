@@ -1,0 +1,103 @@
+:root{
+    --mainColor: rgb(112, 241, 160);
+    --secondaryColor: rgb(43, 144, 95);
+}
+
+#workNavBar{
+    width: 100vw;
+    top:0;
+    height:7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    position: fixed;
+    color:whitesmoke;
+    background-color: var(--secondaryColor);
+    font-size: 0.8rem;
+    z-index: 12;
+}
+
+#barOne{
+    width:50%;
+}
+
+#barTwo{
+    width: 30%;
+}
+
+.utilitySection{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.utilitySection>*{
+    margin:10px;
+    padding:10px;
+    border-radius: 7px;
+}
+
+.utilitySection>*:hover{
+    cursor: pointer;
+}
+
+.workAccordion{
+    color:white;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    background-color: inherit;
+}
+
+.workAccordion:hover{
+    cursor: pointer;;
+}
+
+.workAccordion span{
+    width: 100%;
+    height: 100%;
+}
+
+.normWorkBtn{
+    /* width: fit-content; */
+    background-color: inherit;
+}
+
+
+.diffWorkBtn{
+    background-color: rgb(19, 57, 39);
+}
+
+.utilitySection>*:hover{
+    background-color: var(--mainColor) ;
+}
+
+.toggleBox {
+    position: fixed;
+    z-index: 15;
+}
+
+.toggleContent{
+    position: absolute;
+    top: 107%;
+    transform: translateX(-7%);
+    color: black;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    z-index: 15;
+    border-radius: 5px;
+    box-shadow:  5px 5px 10px -3px #b3b1b1;
+    display: block;
+    pointer-events: none;
+}
+
+.toggle{
+    display: none;
+}
+
+.logOutBtn{
+    pointer-events: auto;
+}

@@ -10,7 +10,7 @@ export const ProjectPage = ()=>{
     let navigate = useNavigate();
     const {wsTitle} = useParams();
     const userAuthenticated = async ()=>{
-        const response = await axios.get("http://localhost:5000/api/auth",{withCredentials:true});
+        const response = await axios.get("/api/auth",{withCredentials:true});
         return response.data;
     }
 

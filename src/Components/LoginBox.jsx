@@ -24,7 +24,7 @@ export const LoginBox = ()=>{
     <div className="signupBox">
         <h2>Input Credentials to Log in</h2>
         <div className="formBox">
-            <form className="formContentBox" action="http://localhost:5000/api/login" method="post" onSubmit={(event)=>{
+            <form className="formContentBox" action="/api/login" method="post" onSubmit={(event)=>{
                 event.preventDefault();
                 // so apparently passport will automatically look for username and password in the post request.
                 let responseData;
@@ -44,7 +44,7 @@ export const LoginBox = ()=>{
 
 
 
-                getReponse("http://localhost:5000/api/login",{
+                getReponse("/api/login",{
                     username:emailInput,
                     password:passwordInput 
                 })

@@ -17,7 +17,7 @@ export const WorkListSection = (props)=>{
     let [itemTitle, setItemTitle] = useState("");
 
     const getWorkSpaceItems = async ()=>{
-        let workSpaceItemArr = await axios.post("http://localhost:5000/api/workspaces/items",{workspaceTitle:workspaceTitle},{withCredentials:true});
+        let workSpaceItemArr = await axios.post("/api/workspaces/items",{workspaceTitle:workspaceTitle},{withCredentials:true});
         console.log(workSpaceItemArr);
         setItems((prevVal)=>{
             return [...workSpaceItemArr.data]

@@ -23,7 +23,7 @@ export const SignupBox = (props)=>{
         try{
             //By using cors package i solved the cors issue
             //fetch("http://localhost:5000/api/signup") both fetch and axios give me Cross-origin resource sharing error.
-            let response = await axios.get("http://localhost:5000/api/signup");
+            let response = await axios.get("/api/signup");
             // response.then((data)=>{
             //     setData((prevVal)=>{
             //         console.log(response);
@@ -66,9 +66,9 @@ export const SignupBox = (props)=>{
     <div className="signupBox">
         <h2>Sign up for you account</h2>
         <div className="formBox formBoxS">
-            <form className="formContentBox" method="post" action="http://localhost:5000/api/signup" onSubmit={(event)=>{
+            <form className="formContentBox" method="post" action="/api/signup" onSubmit={(event)=>{
                 event.preventDefault();
-                let data = postData("http://localhost:5000/api/signup",{
+                let data = postData("/api/signup",{
                     username:emailInput,
                     password:passwordInput
                 });

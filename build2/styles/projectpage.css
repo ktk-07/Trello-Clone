@@ -1,0 +1,304 @@
+:root{
+    --mainColor: rgb(112, 241, 160);
+    --secondaryColor: rgb(43, 144, 95);
+    --backGroundColor: rgb(231, 231, 231);
+}
+
+#projectPage{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top:0px;
+    height:100vh;
+    width:100%;
+    color:black;
+}
+
+#projectSideBar{
+    height: 100vh;
+    width: 30vw;
+}
+
+#WorkProjectBar{
+    position: absolute;
+    z-index: 3;
+    top:7vh;
+    height: 7vh;
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(179, 177, 177); */
+}
+
+.projectBarSection{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectBarSection>*{
+    padding: 5px;
+}
+
+#WorkListSection{
+    position: absolute;
+    top:14vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    height: fit-content;
+    width: fit-content;
+}
+
+.ListItemBox{
+    border: 1px solid black;
+    width:15vw;
+    height:fit-content;
+    border-radius: 3px;
+    background-color: var(--backGroundColor);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    padding: 5px;
+    margin: 0px 10px;
+}
+
+.ListItemContent{
+    width: 17vw;
+    height: fit-content;
+    background-color: white;
+    border-radius: 3px;
+    margin:5px;
+}
+
+.ListItemTitle{
+    padding: 5px;
+}
+
+#addListBtn{
+    width: 17vw;
+    height: fit-content;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+#addListBtn:hover{
+    cursor: pointer;
+}
+
+.cardItem{
+    height: inherit;
+    width: inherit;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+.cardItem:hover{
+    cursor: pointer;
+}
+
+.addCardBtn{
+    margin:5px;
+    text-align: start;
+    width:100%;
+    height: fit-content;
+}
+
+.addCardBtn div{
+    width:100%;
+    height: fit-content;
+}
+
+.addCardBtn:hover div{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.ListItemTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: fit-content;
+}
+
+.itemModalContentBox{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(69, 69, 69,0.7);
+}
+
+.itemModalHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    height: inherit;
+    width: inherit;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+.itemModalHeader p{
+    position: relative;
+    top:0;
+    height: inherit;
+    width: 90%;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+.itemModalHeader textarea{
+    height: inherit;
+    width: 90%;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+.ItemModalDetails{
+    position: absolute;
+    top:35%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: white;
+    min-width:50vw;
+    min-height: 40vh;
+    height:fit-content;
+    overflow-wrap: break-word;
+    hyphens: manual;
+    border-radius: 3px;
+}
+
+.EditableModalContent{
+    width: 100%;
+    height: 50%;
+    height: fit-content;
+    width: fit-content;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+.AddCardContent{
+    border-radius: 4px;
+    width:100%;
+    height: 100%;
+}
+
+.AddCardContent:hover{
+    background-color: var(--mainColor);
+}
+
+#addCardContentBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
+}
+
+#addCardContentBox textarea{
+    width: 90%;
+    height: 50%;
+}
+
+.editBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: flex-start;
+    margin: 5px;
+}
+
+.editBox textarea{
+    width: 90%;
+    height: 50%;
+}
+
+
+.closeBtn{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+}
+
+.closeBtn::after{
+    position: absolute;
+    top:1%;
+    left: 50%;
+    content: "";
+    height:21px;
+    width:3px;
+    transform: rotate(45deg);
+    background-color: black;
+}
+
+.closeBtn::before{
+    position: absolute;
+    content: "";
+    top:1%;
+    left:50%;
+    height:21px;
+    width:3px;
+    transform: rotate(-45deg);
+    background-color: black;
+}
+
+.closeBtn:hover::after, .closeBtn:hover::before{
+    background-color: var(--mainColor);
+}
+
+.addBtn{
+    position: relative;
+    background-color: var(--secondaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color:white;
+}
+
+.addBtn:hover{
+    background-color: var(--mainColor);
+}
+
+textarea{
+    resize:none;
+    overflow:hidden;
+    border-radius: 3px;
+}
+
+textarea:focus{
+    border: 1px solid var(--mainColor);
+}
+
+#editTextArea{
+    width: 90%;
+    height: 50%;
+}
+
+.barTwo{
+    position:fixed;
+    top:7vh;
+    right:-1%;
+    width:300px;
+    height:20vh;
+}

@@ -8,7 +8,8 @@ export const EditableModalContent = (props)=>{
     let [extraDetails, setNewDetails] = useState(props.details);
 
     const editModalContentDescription = async ()=>{
-        let response = await axios.post("http://localhost:5000/api/workspace/modal/editCardDescription",{
+        //let response = await axios.post("http://localhost:5000/api/workspace/modal/editCardDescription"
+        let response = await axios.post("/api/workspace/modal/editCardDescription",{
             workspaceTitle:props.wsTitle,
             itemTitle:props.itemTitle,
             cardTitle:props.content,

@@ -8,7 +8,7 @@ export const WorkListAddItem = (props)=>{
 
     const addItem = async ()=>{
         if(inputVal.length> 0){
-            let response = await axios.post("http://localhost:5000/api/workspaces/additem",{workspaceTitle:props.wsTitle,itemTitle:inputVal,cardItems:[]},{withCredentials:true});
+            let response = await axios.post("/api/workspaces/additem",{workspaceTitle:props.wsTitle,itemTitle:inputVal,cardItems:[]},{withCredentials:true});
             console.log(response);
             setInputVal("");
             setEditBtn(false);

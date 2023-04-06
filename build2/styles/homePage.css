@@ -1,0 +1,118 @@
+:root{
+    --mainColor: rgb(112, 241, 160);
+    --secondaryColor: rgb(43, 144, 95);
+}
+
+#homePage{
+    background-color: rgb(255, 255, 255);
+    height:100vh;
+    width:100vw;
+    color:black;
+    font-size: 0.8rem;
+    margin: 0px;
+    padding:0px;
+    font-weight: bold;
+}
+
+#homeFixedSidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:10vh;
+    left:15vw;
+    height:25vh;
+    width:15vw;
+    font: bold;
+}
+
+.contentSwitchBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width:100%;
+    height: fit-content;
+    border-radius: 3px;
+    margin: 10px 0px
+    /* need to separate the heights */
+}
+
+.contentSwitchBox div{
+    padding: 10px;
+}
+
+
+.hoverSwitch{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.hoverSwitch:hover{
+    cursor: pointer;
+    background-color: rgb(147, 146, 146);
+}
+
+.contentSwitchTwo{
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.HomeMovableSection{
+    position: absolute;
+    top:15vh;
+    left:40vw;
+}
+
+.HomeMovableSection:hover{
+    cursor: pointer;
+}
+
+.contentSwitch:hover{
+    cursor: pointer;
+}
+
+.contentSwitch span{
+    pointer-events: none;
+}
+
+#modalContentBoxHome{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(69, 69, 69,0.7);
+    z-index: 15;
+}
+
+
+/* need to fix the z-index of this */
+#modalContentHome{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 3px;
+    width: 30vw;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    z-index: 15;
+}
+
+#modalContentHome > *{
+    z-index: 15;
+}
+
+.workSpaceBtn{
+    text-align: center;
+}

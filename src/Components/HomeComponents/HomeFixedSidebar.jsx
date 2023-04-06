@@ -32,7 +32,7 @@ export const HomeFixedSidebar = (props)=>{
     }
 
     const addWorkSpaces = async (data)=>{
-        let resData = await axios.post("http://localhost:5000/api/addWorkspaces",data,{withCredentials:true});
+        let resData = await axios.post("/api/addWorkspaces",data,{withCredentials:true});
     }
 
     return(<div id="homeFixedSidebar">
